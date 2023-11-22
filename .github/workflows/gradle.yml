@@ -14,7 +14,7 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read, write, execute
+  contents: read
 
 jobs:
   build:
@@ -41,5 +41,4 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-
 
